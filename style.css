@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* Global configuration */
+* {
+    padding: 0px;
+    margin: 0px;
+    text-align: center
+}
+
+/* Header configuration */
+header {
+    background: url(../assets/header_img.png) center / cover;
+}
+
+header h1 {
+    padding: 20px;
+    color: white;
+    font-family: 'Bungee', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Nav configuration */
+nav {
+    display: flex;
+}
+
+nav ul {
+    align-content: center;
+    margin-left: 6px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center
+}
+
+.nav_item img {
+    width: 22px;
+    height: 22px;
+    margin: 6px;
+}
+/* Main configuration */
+
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #FDFEFC;
+}
