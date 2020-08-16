@@ -16,23 +16,20 @@
     <header id="home_header">
         <h1>Home</h1>
         <nav>
-            <ul>
+            <ul class="nav_direction">
                 <li>
                     <a href="index.html">
-                        <img src="../assets/index.png" alt="home">
-                        <!--                        <p>home</p>-->
+                        <img src="/assets/index.png" alt="home">
                     </a>
                 </li>
                 <li>
                     <a href="works.html">
-                        <img src="../assets/works.png" alt="works">
-                        <!--                        <p>works</p>-->
+                        <img src="/assets/works.png" alt="works">
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../assets/contact.png" alt="contact">
-                        <!--                        <p>contact</p>-->
+                        <img src="/assets/contact.png" alt="contact">
                     </a>
                 </li>
             </ul>
@@ -41,47 +38,48 @@
 
     <main>
 
-        <div class="slide_show">
-
-        </div>
-
         <article id="home_article">
             <section>
-                <div>
-                    <h2><span class="title_dot">● </span>About me</h2>
-                    <p>Takahiro Toya is an app developer. I like to make simple yet powerful tools! I also think designing an app is super fun! My works are always detail oriented and sophisiticated!</p>
+                <div id="about_me_container" class="container">
+                    <h2>Hey! <br />It's Takahiro Toya!</h2>
+                    <p>I am an <span class="highlight"><br />app developer</span><br />who loves to code!<br />I also think designing an app is <br /><span class="highlight">super fun!</span></p>
                 </div>
             </section>
-            <section>
-                <div>
-                    <h2><span class="title_dot">● </span>Education</h2>
-                    <p>Queensland University of Technology</p>
-                    <p>Bachelor of Computer Science</p>
-                    <p>2018 ~ Current</p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2><span class="title_dot">● </span>Experiences</h2>
-                    <div>
+            <section class="home_general_info" id="education_container">
+                <div class="container">
+                    <h2>Education</h2>
+                    <div class="container2">
+                        <p>QUT</p>
+                        <p>Bachelor of Computer Science</p>
+                        <p>2018 ~ Current</p>
+                    </div>
 
+                </div>
+            </section>
+            <section class="home_general_info" id="experience_container">
+                <div class="container">
+                    <h2>Experiences</h2>
+                    <div class="container2">
                         <p>Mobile app Developer</p>
                         <p>2019~ Current</p>
-                        <p>have published two iOS apps using swift and working on two more apps using flutter!</p>
                     </div>
-                    <div>
+                    <div class="container2">
                         <p>Web Developer</p>
                         <p>2020~ Current</p>
-                        <p>Started from React and Node.js application and currently taking course for cloud computing. I used p5.js to learn some desigining aspect too!</p>
                     </div>
                 </div>
             </section>
         </article>
 
-        <aside class="container">
-            <h2>contact</h2>
-            <p>Collection of contact methods</p>
-        </aside>
+        <div id="above_slide_show">
+            <p>Hello again !</p>
+        </div>
+
+        <div id="slide_show">
+            <ul>
+                <li><img src="../assets/slide1.png"></li>
+            </ul>
+        </div>
 
     </main>
 
