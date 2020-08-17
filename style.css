@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
 /* Global configuration */
@@ -11,11 +12,18 @@
     text-align: center
 }
 
+/* Ban scrolling x direction*/
+body {
+    overflow-x: hidden;
+}
+
+/* Default text font and alignment*/
 p {
     font-family: "Helvetica neue";
     text-align: center;
 }
 
+/* Default title font and alignment*/
 h2,
 h3,
 h4 {
@@ -23,12 +31,18 @@ h4 {
     text-align: left;
 }
 
+/* Default padding around a region*/
 .container {
     padding: 20px 20px 20px 20px;
 }
 
+/* Another container inside container */
 .container2 {
     padding: 15px;
+}
+
+.div-flex {
+    display: flex;
 }
 
 /* Header configuration */
@@ -78,25 +92,32 @@ nav img {
 
 /* Main configuration */
 
+/* have a bottom space for footer */
 main {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-#work_main {
     margin: 0px 0px 60px 0px;
     padding: 0px 0px 10px 0px;
 }
 
+/* Home page has different configuration for slide show */
+#home_main {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Default, white background and black foreground color*/
 article,
 aside {
     background-color: white;
+    color: black;
+
 }
 
+/* article in Home page has a space at the bottom for slide show*/
 #home_article {
     margin-bottom: 310px;
 }
 
+/* about_me_container: the first contents in the Home page */
 #about_me_container {
     display: flex;
     flex-direction: column;
@@ -127,6 +148,7 @@ aside {
     font-size: 46px
 }
 
+/* Where my education and experiences are placed*/
 .home_general_info h2 {
     color: white;
     font-size: 40px;
@@ -146,7 +168,6 @@ aside {
     line-height: 2em;
 }
 
-/* Education container */
 #education_container {
     background: url(assets/green.png);
 }
@@ -166,11 +187,11 @@ aside {
     font-size: 30px
 }
 
+/* Each cell (the works) */
 #work_article .container {
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     border-radius: 25px;
-    margin: 10px 20px 30px 20px;
-    padding: 20px
+    margin: 10px 20px 40px 20px;
 }
 
 #work_article a {
@@ -182,6 +203,7 @@ aside {
     font-size: 20px;
 }
 
+/* Defining colors for each cell*/
 #work1 h2 {
     color: #0c4700;
 }
@@ -191,17 +213,58 @@ aside {
     color: white;
 }
 
-#work_article #bubble {
-    background-color: forestgreen;
+#work2 h2 {
+    color: #a19622;
+}
+
+#work2 .container {
+    background-color: #a19622;
     color: white;
-    margin: -20px 15px 30px 0px;
-    padding: 0px;
-    border-radius: 10px;
+}
+
+#work3 h2 {
+    color: #5c1469;
+}
+
+#work3 .container {
+    background-color: #5c1469;
+    color: white;
+}
+
+#work4 h2 {
+    color: #c71e1e;
+}
+
+#work4 .container {
+    background-color: #c71e1e;
+    color: white;
+}
+
+#work5 h2 {
+    color: #069e8f;
+}
+
+#work5 .container {
+    background-color: #069e8f;
+    color: white;
+}
+
+/* The annotatation sticker */
+
+.sticker {
+    background-color: #ffff66;
+    margin: -20px 30px 30px 0px;
+    padding: 10px;
     transform: rotateZ(-3deg);
-    box-shadow: none;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     position: relative;
     left: 20px;
     top: -20px;
+}
+
+.sticker p {
+    font-family: 'Gochi Hand', cursive;
+    color: black;
 }
 
 footer {
