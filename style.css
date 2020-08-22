@@ -73,7 +73,7 @@ nav li {
     display: flex;
     flex-direction: column;
     padding: 4px;
-    background-color: white;
+    background-color: #545454;
     margin: 4px;
     border-radius: 24px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -88,6 +88,11 @@ nav img {
     width: 23px;
     height: 23px;
     margin: 5px;
+}
+
+/* nav icon of active page*/
+.active {
+    background-color: white;
 }
 
 /* Main configuration */
@@ -109,7 +114,6 @@ article,
 aside {
     background-color: white;
     color: black;
-
 }
 
 /* article in Home page has a space at the bottom for slide show*/
@@ -309,19 +313,4 @@ footer a {
     align-items: center;
     display: inline-block;
     text-align:
-}
-
-#above_slide_show {
-    position: fixed;
-    bottom 310px;
-    left: 0px;
-    width: 100%;
-    z-index: -2;
-    height: 20px;
-    background-color: red;
-}
-
-#agove_slide_show p {
-    color: blue;
-    font-size: 40px;
 }
