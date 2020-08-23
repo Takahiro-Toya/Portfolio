@@ -209,16 +209,27 @@ aside {
     margin: 5px 0px 15px 0px;
 }
 
-#work_article img {
+#work_article .work_img {
     width: 100%;
     height: 100%;
 }
 
 #work_article .image_region {
-    padding: 15px 0px 5px 0px;
+    padding: 15px 0px 15px 0px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     background-color: white;
+}
+
+.link_icon {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px 20px 5px 0px;
+}
+
+.link_icon img {
+    width: 15px;
+    height: 15px;
 }
 
 #work_article .image_region a {
@@ -227,29 +238,20 @@ aside {
 
 /* Defining colors for each cell*/
 #work1 {
-    background-color: #0c4700;
-    color: white;
+    background-color: #e8fade;
+    color: black;
 }
 
 #work2 {
-    background-color: #a19622;
-    color: white;
+    background-color: #faedde;
+    color: black;
 }
 
 #work3 {
-    background-color: #5c1469;
-    color: white;
+    background-color: #e9defa;
+    color: black;
 }
 
-#work4 {
-    background-color: #c71e1e;
-    color: white;
-}
-
-#work5 {
-    background-color: #069e8f;
-    color: white;
-}
 
 footer {
     background: url(../assets/header_footer.png) center / cover;
@@ -280,6 +282,7 @@ footer a {
     bottom: 60px;
     left: 0px;
     height: 250px;
+    width: 100%;
     z-index: -2;
 }
 
