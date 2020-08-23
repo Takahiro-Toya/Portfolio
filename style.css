@@ -23,6 +23,10 @@ p {
     text-align: center;
 }
 
+a {
+    font-family: "Helvetica neue";
+}
+
 /* Default title font and alignment*/
 h2,
 h3,
@@ -47,7 +51,7 @@ h4 {
 
 /* Header configuration */
 header {
-    background: url(../assets/header.png) center / cover;
+    background: url(../assets/header_footer.png) center / cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,8 +103,8 @@ nav img {
 
 /* have a bottom space for footer */
 main {
-    margin: 0px 0px 60px 0px;
-    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 /* Home page has different configuration for slide show */
@@ -126,11 +130,12 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(assets/programmer_img.jpeg) center / cover;
 }
 
 #about_me_container h2 {
-    background-color: white;
-    color: #fa8e00;
+    background-color: transparent;
+    color: #ff6200;
     font-family: 'Pangolin', cursive;
     font-size: 40px;
     transform: rotateZ(-5deg);
@@ -139,20 +144,23 @@ aside {
 
 #about_me_container p {
     font-size: 30px;
-    color: brown;
+    color: #ffff00;
     font-family: 'Baloo Tammudu 2', cursive;
-    line-height: 1.5em;
+    line-height: 1.8em;
     text-align: left;
     padding: 15px;
+    text-shadow: 2px 4px black;
 }
 
-#about_me_container .highlight {
+#about_me_container strong {
     text-decoration-line: underline;
-    text-decoration-color: blue;
-    font-size: 46px
+    text-decoration-color: white;
+    color: red;
+    font-size: 47px;
+    text-shadow: 2px 4px black;
 }
 
-/* Where my education and experiences are placed*/
+/* Where education and experiences are placed */
 .home_general_info h2 {
     color: white;
     font-size: 40px;
@@ -182,111 +190,82 @@ aside {
 
 
 /* works page*/
-#work_article {
-    margin-top: 20px;
-}
 
 #work_article h2 {
     text-align: center;
-    font-size: 30px
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
 }
 
-/* Each cell (the works) */
-#work_article .container {
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    border-radius: 25px;
-    margin: 10px 20px 40px 20px;
-}
-
-#work_article a {
-    color: white;
+#work_article h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 #work_article p {
     line-height: 2em;
     font-size: 20px;
+    margin: 5px 0px 15px 0px;
+}
+
+#work_article img {
+    width: 100%;
+    height: 100%;
+}
+
+#work_article .image_region {
+    padding: 15px 0px 5px 0px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    background-color: white;
+}
+
+#work_article .image_region a {
+    color: blue;
 }
 
 /* Defining colors for each cell*/
-#work1 h2 {
-    color: #0c4700;
-}
-
-#work1 .container {
+#work1 {
     background-color: #0c4700;
     color: white;
 }
 
-#work2 h2 {
-    color: #a19622;
-}
-
-#work2 .container {
+#work2 {
     background-color: #a19622;
     color: white;
 }
 
-#work3 h2 {
-    color: #5c1469;
-}
-
-#work3 .container {
+#work3 {
     background-color: #5c1469;
     color: white;
 }
 
-#work4 h2 {
-    color: #c71e1e;
-}
-
-#work4 .container {
+#work4 {
     background-color: #c71e1e;
     color: white;
 }
 
-#work5 h2 {
-    color: #069e8f;
-}
-
-#work5 .container {
+#work5 {
     background-color: #069e8f;
     color: white;
 }
 
-/* The annotatation sticker */
-
-.sticker {
-    background-color: #ffff66;
-    margin: -20px 30px 30px 0px;
-    padding: 10px;
-    transform: rotateZ(-3deg);
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    position: relative;
-    left: 20px;
-    top: -20px;
-}
-
-.sticker p {
-    font-family: 'Gochi Hand', cursive;
-    color: black;
-}
-
 footer {
-    background: url(../assets/footer.png) center / cover;
+    background: url(../assets/header_footer.png) center / cover;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: white;
     height: 60px;
-    position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    z-index: -1;
 }
 
 #home_footer {
-    height: 310px;
+    position: fixed;
+    z-index: -1;
 }
 
 footer a {
@@ -295,22 +274,21 @@ footer a {
 }
 
 /* slide show configuration */
-#slide_show {
-    background: url(assets/black.png);
+#hidden_greeting {
+    background: url(assets/hidden_img.jpeg) center / cover;
     position: fixed;
     bottom: 60px;
     left: 0px;
-    display: inline-block;
-    width: 100%;
     height: 250px;
     z-index: -2;
-    overflow: scroll;
 }
 
-#slide_show img {
-    max-width: 100%;
-    max-height: 230px;
+#hidden_greeting p {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: inline-block;
-    text-align:
+    color: white;
+    font-family: 'Pangolin', cursive;
+    font-size: 22px;
+    padding: 30px 20px 10px 20px;
 }
