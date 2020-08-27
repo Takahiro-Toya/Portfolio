@@ -40,9 +40,16 @@ h4 {
     padding: 20px 20px 20px 20px;
 }
 
-/* Another container inside container */
-.container2 {
-    padding: 15px;
+.vertical_padding {
+    padding: 10px 0px 10px 0px;
+}
+
+hr {
+    margin: 60px 30px 20px 30px;
+    border-top: 15px dotted;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 
 .div-flex {
@@ -160,53 +167,40 @@ aside {
     text-shadow: 2px 4px black;
 }
 
+#my_history li {
+    display: flex;
+    flex-direction: column;
+}
+
+#my_history li p {
+    text-align: left;
+    font-size: 20px;
+}
+
 /* Where education and experiences are placed */
-.home_general_info h2 {
-    color: white;
-    font-size: 40px;
+#my_history h3 {
+    color: #5c5c5c;
+    font-size: 30px;
     padding-bottom: 10px
 }
 
-.home_general_info .container2 {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 30px;
-    margin-bottom: 10px;
+
+
+#work_article {
+    margin: 10px 0px 40px 0px;
 }
 
-.home_general_info .container2 p {
-    color: black;
-    text-align: left;
-    font-size: 20px;
-    line-height: 2em;
-}
-
-#education_container {
-    background: url(assets/green.png);
-}
-
-#experience_container {
-    background: url(assets/orange.png);
-}
-
-
-/* works page*/
 
 #work_article h2 {
     text-align: center;
     font-size: 35px;
-    margin: 10px 0px 10px 0px;
-}
-
-#work_article h3 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 #work_article p {
     line-height: 2em;
     font-size: 20px;
-    margin: 5px 0px 15px 0px;
+    margin: 0px 0px 15px 0px;
 }
 
 #work_article .work_img {
@@ -237,19 +231,16 @@ aside {
 }
 
 /* Defining colors for each cell*/
-#work1 {
-    background-color: #e8fade;
-    color: black;
+#work1 h2 {
+    color: #226100;
 }
 
-#work2 {
-    background-color: #faedde;
-    color: black;
+#work2 h2 {
+    color: #ff8800;
 }
 
-#work3 {
-    background-color: #e9defa;
-    color: black;
+#work3 h2 {
+    color: #5b3299;
 }
 
 
