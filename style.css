@@ -208,6 +208,10 @@ aside {
 
 #work_article h2 {
     text-align: center;
+}
+
+#work_article h3 {
+    text-align: center;
     font-size: 35px;
     font-family: 'Baloo Tammudu 2', cursive;
 }
@@ -244,15 +248,15 @@ aside {
 }
 
 /* Defining colors for each card*/
-#work1 h2 {
+#work1 h3 {
     color: #226100;
 }
 
-#work2 h2 {
+#work2 h3 {
     color: #ff8800;
 }
 
-#work3 h2 {
+#work3 h3 {
     color: #5b3299;
 }
 
