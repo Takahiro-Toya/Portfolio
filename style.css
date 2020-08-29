@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
-
 /* Global configuration */
 * {
     padding: 0px;
     margin: 0px;
-    text-align: center
+    text-align: center;
+    font-family: "Helvetica neue";
 }
 
 /* Ban scrolling x direction*/
@@ -25,10 +25,16 @@ p {
 
 a {
     font-family: "Helvetica neue";
+    word-wrap: break-word;
 }
 
 /* Default title font and alignment*/
-h2,
+h2 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: left;
+    margin-bottom: -10px;
+}
+
 h3,
 h4 {
     font-family: "Helvetica neue";
@@ -41,20 +47,14 @@ h4 {
 }
 
 .vertical_padding {
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
 }
 
-hr {
-    margin: 60px 30px 20px 30px;
-    border-top: 15px dotted;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
+.inline-div * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.div-flex {
-    display: flex;
-}
 
 /* Header configuration */
 header {
@@ -106,19 +106,6 @@ nav img {
     background-color: white;
 }
 
-/* Main configuration */
-
-/* have a bottom space for footer */
-main {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-/* Home page has different configuration for slide show */
-#home_main {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
 
 /* Default, white background and black foreground color*/
 article,
@@ -127,7 +114,7 @@ aside {
     color: black;
 }
 
-/* article in Home page has a space at the bottom for slide show*/
+/* article in Home page has a space at the bottom for the hidden region*/
 #home_article {
     margin-bottom: 310px;
 }
@@ -137,59 +124,87 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(assets/programmer_img.jpeg) center / cover;
+    background-color: #f7faff;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    margin: 10px
 }
 
 #about_me_container h2 {
-    background-color: transparent;
-    color: #ff6200;
+    background-color: #fff06b;
+    color: black;
     font-family: 'Pangolin', cursive;
-    font-size: 40px;
+    font-size: 35px;
     transform: rotateZ(-5deg);
     margin: 0px 10px 20px 10px;
+    padding: 10px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 #about_me_container p {
     font-size: 30px;
-    color: #ffff00;
+    color: blue;
     font-family: 'Baloo Tammudu 2', cursive;
     line-height: 1.8em;
     text-align: left;
     padding: 15px;
-    text-shadow: 2px 4px black;
 }
 
 #about_me_container strong {
     text-decoration-line: underline;
-    text-decoration-color: white;
     color: red;
-    font-size: 47px;
-    text-shadow: 2px 4px black;
+    font-size: 40px;
 }
 
+#my_history {
+    margin-top: 20px;
+}
+
+
+/* Container of education and experience*/
 #my_history li {
     display: flex;
     flex-direction: column;
 }
 
 #my_history li p {
-    text-align: left;
     font-size: 20px;
 }
 
-/* Where education and experiences are placed */
-#my_history h3 {
+#my_history h2 {
     color: #5c5c5c;
     font-size: 30px;
-    padding-bottom: 10px
+    text-align: center;
 }
 
+#my_history .title_underline {
+    background: url(assets/orange.png);
+    height: 10px;
+}
 
+#my_history .inline-div {
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+}
 
+/* icons */
+#my_history img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px
+}
+
+/* work page configuration*/
 #work_article {
     margin: 10px 0px 40px 0px;
 }
 
+#work_article hr {
+    margin: 60px 30px 20px 30px;
+    border-top: 15px dotted;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
 
 #work_article h2 {
     text-align: center;
@@ -208,13 +223,15 @@ aside {
     height: 100%;
 }
 
-#work_article .image_region {
+/* Floating card that contains work image*/
+#work_article .work-card {
     padding: 15px 0px 15px 0px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     background-color: white;
 }
 
+/* icon that indicate the card is touchable and link to some pages*/
 .link_icon {
     display: flex;
     flex-direction: row-reverse;
@@ -226,11 +243,7 @@ aside {
     height: 15px;
 }
 
-#work_article .image_region a {
-    color: blue;
-}
-
-/* Defining colors for each cell*/
+/* Defining colors for each card*/
 #work1 h2 {
     color: #226100;
 }
@@ -241,6 +254,91 @@ aside {
 
 #work3 h2 {
     color: #5b3299;
+}
+
+#contact_page img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#contact_page article {
+    font-size: 20px
+}
+
+#contact_page li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#contact_page .collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px 20px 5px 20px;
+}
+
+#contact_page .vertical_bar {
+    background: url(assets/orange.png);
+    width: 10px;
+    height: auto;
+}
+
+#contact_page aside #references {
+    text-align: left;
+    margin: 10px 10px 0px 10px;
+}
+
+
+#contact_page aside {
+    background-color: #f2f2f2;
+}
+
+#contact_page aside li {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 15px 0px;
+}
+
+/* configuration of each line */
+#contact_page aside li * {
+    text-align: left;
+    margin: 5px 0px 0px 0px;
+}
+
+#contact_form * {
+    width: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#contact_form p {
+    margin: 20px 0px 5px 20px;
+    text-align: left;
+
+}
+
+#contact_form input {
+    height: 40px;
+    font-size: 20px;
+}
+
+#contact_form textarea {
+    height: 200px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#contact_form input[type=submit] {
+    border-radius: 50px;
+    text-align: center;
+    color: #1e4663;
+    font-size: 20px;
+    background-color: white;
+    border-color: #1e4663;
+    border-width: 3px;
 }
 
 
@@ -268,7 +366,7 @@ footer a {
 
 /* slide show configuration */
 #hidden_greeting {
-    background: url(assets/hidden_img.jpeg) center / cover;
+    background: url(assets/programmer_img.jpeg) center / cover;
     position: fixed;
     bottom: 60px;
     left: 0px;
@@ -279,10 +377,15 @@ footer a {
 
 #hidden_greeting p {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Pangolin', cursive;
+    color: red;
+    font-family: 'Baloo Tammudu 2', cursive;
     font-size: 22px;
     padding: 30px 20px 10px 20px;
+}
+
+#hidden_greeting .reference {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
 }
