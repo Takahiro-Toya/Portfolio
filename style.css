@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 /* Global configuration */
 * {
@@ -68,7 +66,6 @@ header h1 {
     padding: 20px;
     color: white;
     font-family: 'Bungee', cursive;
-    font-style: normal;
     font-weight: 600;
     text-align: left;
 }
@@ -145,7 +142,7 @@ aside {
 
 #about_me_container p {
     font-size: 30px;
-    color: blue;
+    color: #5c5c5c;
     font-family: 'Baloo Tammudu 2', cursive;
     line-height: 1.8em;
     text-align: left;
@@ -229,10 +226,6 @@ aside {
 
 #work_article h2 {
     text-align: center;
-}
-
-#work_article h3 {
-    text-align: center;
     font-size: 35px;
     font-family: 'Baloo Tammudu 2', cursive;
 }
@@ -271,15 +264,15 @@ aside {
 }
 
 /* Defining colors for each card*/
-#work1 h3 {
+#work1 h2 {
     color: #226100;
 }
 
-#work2 h3 {
+#work2 h2 {
     color: #ff8800;
 }
 
-#work3 h3 {
+#work3 h2 {
     color: #5b3299;
 }
 
@@ -300,7 +293,7 @@ aside {
     margin: 10px;
 }
 
-#contact_page .collections {
+#contact_page .divide_for_leftbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -396,7 +389,6 @@ footer a {
 
 /* slide show configuration */
 #hidden_greeting {
-    background: url(assets/programmer_img.jpeg) center / cover;
     position: fixed;
     bottom: 60px;
     left: 0px;
@@ -406,11 +398,21 @@ footer a {
 }
 
 #hidden_greeting p {
-    display: flex;
-    color: red;
+    text-align: center;
+    color: blue;
+    text-shadow: 2px 1px white;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    left: 1px;
     font-family: 'Baloo Tammudu 2', cursive;
-    font-size: 22px;
-    padding: 30px 20px 10px 20px;
+    font-size: 20px;
+    padding: 10px 20px 0px 20px;
+}
+
+#hidden_greeting figure img {
+    width: 100%;
+    height: 100%;
 }
 
 #hidden_greeting .reference {
