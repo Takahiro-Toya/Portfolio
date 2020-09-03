@@ -56,7 +56,7 @@ h4 {
 
 /* Header configuration */
 header {
-    background: url(../assets/header_footer.png) center / cover;
+    background: url(assets/header_footer.png) center / cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,7 +233,7 @@ aside {
 #works_page article p {
     line-height: 2em;
     font-size: 20px;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 #works_page .work_img {
@@ -273,7 +273,7 @@ aside {
     color: #5b3299;
 }
 
-#contact_page img {
+#contact_page main img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -284,7 +284,7 @@ aside {
     margin-bottom: 40px;
 }
 
-#contact_page li {
+#contact_page main li {
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -334,7 +334,6 @@ aside {
 #contact_form p {
     margin: 20px 0px 5px 20px;
     text-align: left;
-
 }
 
 #contact_form input {
@@ -360,10 +359,8 @@ aside {
     width: 80%;
 }
 
-
-
 footer {
-    background: url(../assets/header_footer.png) center / cover;
+    background: url(assets/header_footer.png) center / cover;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -379,12 +376,11 @@ footer a {
     text-decoration: none;
 }
 
+/* Different configuration footer for home page*/
 #home_page footer {
     position: fixed;
     z-index: -1;
 }
-
-
 
 /* slide show configuration */
 #hidden_greeting {
