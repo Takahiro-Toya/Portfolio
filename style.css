@@ -112,7 +112,7 @@ aside {
 }
 
 /* article in Home page has a space at the bottom for the hidden region*/
-#home_article {
+#home_page article {
     margin-bottom: 310px;
     /* margin for hidden greeting + footer */
     box-shadow: 10px 0px 15px 0 rgba(0, 64, 255, .3);
@@ -212,11 +212,11 @@ aside {
 }
 
 /* work page configuration*/
-#work_article {
+#works_page article {
     margin: 10px 0px 40px 0px;
 }
 
-#work_article hr {
+#works_page article hr {
     margin: 60px 30px 20px 30px;
     border-top: 15px dotted;
     border-bottom: 0px;
@@ -224,25 +224,25 @@ aside {
     border-right: 0px;
 }
 
-#work_article h2 {
+#works_page article h2 {
     text-align: center;
     font-size: 35px;
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
-#work_article p {
+#works_page article p {
     line-height: 2em;
     font-size: 20px;
     margin: 0px 0px 15px 0px;
 }
 
-#work_article .work_img {
+#works_page .work_img {
     width: 100%;
     height: 100%;
 }
 
 /* Floating card that contains work image*/
-#work_article .work_card {
+.work_card {
     padding: 15px 0px 15px 0px;
     box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.8);
     border-radius: 15px;
@@ -256,9 +256,6 @@ aside {
     flex-direction: row-reverse;
     margin: 0px 20px 5px auto;
     box-sizing: border-box;
-}
-
-.link_icon {
     width: 15px;
     height: 15px;
 }
@@ -377,15 +374,17 @@ footer {
     width: 100%;
 }
 
-#home_footer {
-    position: fixed;
-    z-index: -1;
-}
-
 footer a {
     color: white;
     text-decoration: none;
 }
+
+#home_page footer {
+    position: fixed;
+    z-index: -1;
+}
+
+
 
 /* slide show configuration */
 #hidden_greeting {
